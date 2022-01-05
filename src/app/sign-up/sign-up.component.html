@@ -1,0 +1,131 @@
+<div class="row justify-content-center "  style=" background-color: ; margin-top: 35px;"  >
+				<div class="col-10 col-lg-5 align-self-center " style="  background-color: ">
+					<h3 style="text-align: center;">Sign Up</h3>
+					<p style="text-align: center;">Sign Up free for better experience.</p>
+					<p style="text-align: center;"> <img src="assets/images/lion.jpg" class="rounded-circle mx-auto" alt="lion sitting and looking around" style="width: 25% ; text-align: center; margin-bottom: 15px;" ></p>
+					
+					<form (ngSubmit) = "onSubmit()" >
+						<!-- <p style="color: red; text-align: center;" *ngIf="tryAgain === true">Email or Password are wrong try again</p> -->
+						<div class="form-group row">
+							
+							<label class="col-lg-3 col-form-label" for="valid-input">Email</label>
+							<div class="col-lg-9 input-group">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faAt"></fa-icon></span>
+									</div>
+									<input type="email" class="form-control" id="valid-input" name="email"  [(ngModel)] = "email"
+									placeholder="Email" />
+								</div>
+								<small class="form-text text-muted">Type in your Email </small>
+							</div>
+							
+						</div>
+
+					
+
+						<div class="form-group row">
+							
+							<label class="col-lg-3 col-form-label" for="valid-input">Phone Number</label>
+							<div class="col-lg-9 input-group">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faMobile"></fa-icon></span>
+									</div>
+									<input type="text" class="form-control" id="valid-input" name="phone" [(ngModel)] = "phone"
+									placeholder="Phone Number" />
+								</div>
+								<small class="form-text text-muted">Type in Phone Number</small>
+							</div>
+							
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-form-label" for="valid-input">Password</label>
+							<div class="col-lg-9">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faStarOfLife"></fa-icon></span>
+									</div>
+									<input type="password" class="form-control" id="valid-input" name="password" [(ngModel)] = "password"
+									placeholder="Password" />
+								</div>
+								<small class="form-text text-muted">Type in your password</small>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-form-label" for="valid-input">Password Confirm</label>
+							<div class="col-lg-9">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faStarOfLife"></fa-icon></span>
+									</div>
+									<input type="password" class="form-control" id="valid-input" name="ConfirmPassword"   [(ngModel)] = "ConfirmPassword"
+									placeholder="Confirm Password" />
+								</div>
+								<small class="form-text text-muted">Type in your password again</small>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-3 col-form-label" for="valid-input">First Name</label>
+							<div class="col-lg-9">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faUser"></fa-icon></span>
+									</div>
+									<input type="text" class="form-control" id="valid-input" name="FirstName" [(ngModel)] = "FirstName"
+									placeholder="First Name" />
+								</div>
+								<small class="form-text text-muted">Type in your First Name</small>
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label class="col-lg-3 col-form-label" for="valid-input">Last Name</label>
+							<div class="col-lg-9">
+								<div class=" input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><fa-icon [icon]="faUser"></fa-icon></span>
+									</div>
+									<input type="email" class="form-control" id="valid-input" name="LastName"
+									 [(ngModel)] = "LastName"
+									placeholder="Last Name" />
+								</div>
+								<small class="form-text text-muted">Type in your Last Name</small>
+							</div>
+						</div>
+						
+						<div class="form-group row justify-content-end" style="background-color:  ">
+							<div class="col-lg-10 " style="background-color:  ; text-align: right; ">
+							<button type="submit" class="btn btn-outline-dark" style="width: 30%;">Sign Up</button>
+							
+							</div>
+						</div>
+
+						<div style="text-align: center; margin-top: 40px ">
+							<a routerLink="">You already have account ? Sign In</a>	
+						</div>
+
+						
+
+					</form>
+
+
+
+				</div> <!-- left column -->
+
+				<footer id="footer-content" style="margin-bottom: 8px">
+					<small>Copyright &copy; Donald O.</small>
+				</footer>
+
+
+
+
+
+
+		</div>
+
+
+
+
+		

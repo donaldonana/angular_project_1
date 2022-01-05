@@ -1,0 +1,62 @@
+		<!-- <div class="alert alert-primary" role="alert" tabindex="-1" style="">
+  A simple primary alert—check it out!
+</div> -->
+		<div class="row justify-content-center " style=" background-color: " >
+				<div class="col-10 col-lg-4 align-self-center " style="background-color:  ; margin-top: 70px">
+					<h3 style="text-align: center;">Sign In</h3>
+					<p style="text-align: center;">Sign in today for better experience.</p>
+					<p style="text-align: center;"> <img src="assets/images/lion.jpg" class="rounded-circle mx-auto" alt="lion sitting and looking around" style="width: 25% ; text-align: center;" ></p>
+					
+					<form [formGroup] = "myform" (ngSubmit)="onSubmit()">
+						<p style="color: red; text-align: center;" *ngIf="tryAgain === true">Email or Password are wrong try again</p>
+						<div class="form-group row" >
+							<label class="col-lg-2 col-form-label" for="username">Email</label>
+							<div class="col-lg-10">
+								<input type="email" placeholder="Email"  id="email" formControlName = "username"[ngClass]="{'form-control': true,
+											'is-invalid' : userEmpty === true }">
+								<small class="form-text text-muted">exemple : onanadonald@gmail.com</small>
+								<div class="invalid-feedback" *ngIf="userEmpty === true">
+									You have to give your user name
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-2 col-form-label"  for="password">Password</label>
+							<div class="col-lg-10">
+								<input type="password" placeholder="Your Password"  id="password" formControlName = "password"  required  [ngClass]="{'form-control': true,
+													'is-invalid' : passEmpty === true }">
+								<div class="invalid-feedback" *ngIf="passEmpty === true">
+									You have to give your password
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group row justify-content-end">
+							<div class="col-lg-10">
+								<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="remember-me- checkbox-2">
+								<label class="form-check-label" for="remember-me-checkbox-2">Remember Me</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<div class="col-lg-10">
+							<button class="btn btn-sm btn-secondary" type="submit">Sign in</button>
+							</div>
+						</div>
+						<div style="text-align: center; margin-top: 40px">
+							<a routerLink="signUp">You Don't have account ? Sign Up</a>	
+						</div>
+						
+					</form>
+				</div> <!-- left column -->
+
+				<footer id="footer-content" >
+					<small>Copyright &copy; Donald O.</small>
+				</footer>
+
+		</div>
+
+
+
+		
